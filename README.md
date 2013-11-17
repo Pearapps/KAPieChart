@@ -2,6 +2,7 @@ KAPieChart
 ==========
 
 Basic pie chart for iOS.
+Tested on iOS 6.x and 7.x.
 
 Features:
 - Any size chart.
