@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9189064183942F200783F1A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9189063183942F200783F1A /* Default-568h@2x.png */; };
 		B98D31BA1838ABA00016CBFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31B91838ABA00016CBFB /* Foundation.framework */; };
 		B98D31BC1838ABA00016CBFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31BB1838ABA00016CBFB /* CoreGraphics.framework */; };
 		B98D31BE1838ABA00016CBFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31BD1838ABA00016CBFB /* UIKit.framework */; };
@@ -17,7 +18,8 @@
 		B98D31DC1838ABA00016CBFB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31DB1838ABA00016CBFB /* XCTest.framework */; };
 		B98D31DD1838ABA00016CBFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31B91838ABA00016CBFB /* Foundation.framework */; };
 		B98D31DE1838ABA00016CBFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31BD1838ABA00016CBFB /* UIKit.framework */; };
-		B98D330318392F3F0016CBFB /* PieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D330218392F3F0016CBFB /* PieChart.m */; };
+		B98D330318392F3F0016CBFB /* KAPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D330218392F3F0016CBFB /* KAPieChart.m */; };
+		B98D3307183938C50016CBFB /* KAPieChartSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D3306183938C50016CBFB /* KAPieChartSlice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9189063183942F200783F1A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B98D31B61838ABA00016CBFB /* KAPieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAPieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98D31B91838ABA00016CBFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B98D31BB1838ABA00016CBFB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,8 +48,10 @@
 		B98D31D21838ABA00016CBFB /* KAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAViewController.m; sourceTree = "<group>"; };
 		B98D31DA1838ABA00016CBFB /* KAPieChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAPieChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98D31DB1838ABA00016CBFB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B98D330118392F3F0016CBFB /* PieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChart.h; sourceTree = "<group>"; };
-		B98D330218392F3F0016CBFB /* PieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChart.m; sourceTree = "<group>"; };
+		B98D330118392F3F0016CBFB /* KAPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAPieChart.h; sourceTree = "<group>"; };
+		B98D330218392F3F0016CBFB /* KAPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAPieChart.m; sourceTree = "<group>"; };
+		B98D3305183938C50016CBFB /* KAPieChartSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAPieChartSlice.h; sourceTree = "<group>"; };
+		B98D3306183938C50016CBFB /* KAPieChartSlice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAPieChartSlice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +110,7 @@
 		B98D31BF1838ABA00016CBFB /* KAPieChart */ = {
 			isa = PBXGroup;
 			children = (
-				B98D330118392F3F0016CBFB /* PieChart.h */,
-				B98D330218392F3F0016CBFB /* PieChart.m */,
+				B98D33041839389C0016CBFB /* PieChartClasses */,
 				B98D31C81838ABA00016CBFB /* KAAppDelegate.h */,
 				B98D31C91838ABA00016CBFB /* KAAppDelegate.m */,
 				B98D31D11838ABA00016CBFB /* KAViewController.h */,
@@ -119,12 +123,24 @@
 		B98D31C01838ABA00016CBFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9189063183942F200783F1A /* Default-568h@2x.png */,
 				B98D31C11838ABA00016CBFB /* KAPieChart-Info.plist */,
 				B98D31C21838ABA00016CBFB /* InfoPlist.strings */,
 				B98D31C51838ABA00016CBFB /* main.m */,
 				B98D31C71838ABA00016CBFB /* KAPieChart-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B98D33041839389C0016CBFB /* PieChartClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B98D330118392F3F0016CBFB /* KAPieChart.h */,
+				B98D330218392F3F0016CBFB /* KAPieChart.m */,
+				B98D3305183938C50016CBFB /* KAPieChartSlice.h */,
+				B98D3306183938C50016CBFB /* KAPieChartSlice.m */,
+			);
+			name = PieChartClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B98D31C41838ABA00016CBFB /* InfoPlist.strings in Resources */,
+				B9189064183942F200783F1A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,8 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98D3307183938C50016CBFB /* KAPieChartSlice.m in Sources */,
 				B98D31D31838ABA00016CBFB /* KAViewController.m in Sources */,
-				B98D330318392F3F0016CBFB /* PieChart.m in Sources */,
+				B98D330318392F3F0016CBFB /* KAPieChart.m in Sources */,
 				B98D31CA1838ABA00016CBFB /* KAAppDelegate.m in Sources */,
 				B98D31C61838ABA00016CBFB /* main.m in Sources */,
 			);
