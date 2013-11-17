@@ -10,4 +10,4 @@ Features:
 - Easy to implement.
 - Fast.
 
-![alt tag](http://thepearapps.com/pieChart.png)
+![alt tag](http://thepearapps.com/pieChart@2x.png)
