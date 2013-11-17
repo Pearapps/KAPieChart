@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #define KASliceMake(color, size) [KAPieChartSlice sliceWithColor:color andAmount:size]
-@interface KAPieChartSlice : NSObject
-+(KAPieChartSlice *)sliceWithColor:(UIColor *)color andAmount:(float)size;
 
-@property (nonatomic, strong) UIColor * color;
+@interface KAPieChartSlice : NSObject
++(KAPieChartSlice *)sliceWithColor:(UIColor *)color andAmount:(float)size; // create a slice.
+
+@property (nonatomic, strong) UIColor * color; // color of slice
 @property (nonatomic, assign) float size; // 'area' or how big the slice is relative to other amounts
 @end
