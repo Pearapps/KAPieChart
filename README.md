@@ -4,6 +4,7 @@ KAPieChart
 Basic pie chart for iOS.
 
 Features:
+- Any size chart.
 - Unlimited slices.
 - Any colors.
 - Any size slices.
