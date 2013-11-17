@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B98D31BA1838ABA00016CBFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31B91838ABA00016CBFB /* Foundation.framework */; };
+		B98D31BC1838ABA00016CBFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31BB1838ABA00016CBFB /* CoreGraphics.framework */; };
+		B98D31BE1838ABA00016CBFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31BD1838ABA00016CBFB /* UIKit.framework */; };
+		B98D31C41838ABA00016CBFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B98D31C21838ABA00016CBFB /* InfoPlist.strings */; };
+		B98D31C61838ABA00016CBFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D31C51838ABA00016CBFB /* main.m */; };
+		B98D31CA1838ABA00016CBFB /* KAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D31C91838ABA00016CBFB /* KAAppDelegate.m */; };
+		B98D31CD1838ABA00016CBFB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98D31CB1838ABA00016CBFB /* Main_iPhone.storyboard */; };
+		B98D31D01838ABA00016CBFB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98D31CE1838ABA00016CBFB /* Main_iPad.storyboard */; };
+		B98D31D31838ABA00016CBFB /* KAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D31D21838ABA00016CBFB /* KAViewController.m */; };
+		B98D31D51838ABA00016CBFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98D31D41838ABA00016CBFB /* Images.xcassets */; };
+		B98D31DC1838ABA00016CBFB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31DB1838ABA00016CBFB /* XCTest.framework */; };
+		B98D31DD1838ABA00016CBFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31B91838ABA00016CBFB /* Foundation.framework */; };
+		B98D31DE1838ABA00016CBFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D31BD1838ABA00016CBFB /* UIKit.framework */; };
+		B98D31E61838ABA00016CBFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B98D31E41838ABA00016CBFB /* InfoPlist.strings */; };
+		B98D31E81838ABA00016CBFB /* KAPieChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D31E71838ABA00016CBFB /* KAPieChartTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B98D31DF1838ABA00016CBFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B98D31AE1838ABA00016CBFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98D31B51838ABA00016CBFB;
+			remoteInfo = KAPieChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B98D31B61838ABA00016CBFB /* KAPieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAPieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98D31B91838ABA00016CBFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B98D31BB1838ABA00016CBFB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B98D31BD1838ABA00016CBFB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B98D31C11838ABA00016CBFB /* KAPieChart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KAPieChart-Info.plist"; sourceTree = "<group>"; };
+		B98D31C31838ABA00016CBFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B98D31C51838ABA00016CBFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B98D31C71838ABA00016CBFB /* KAPieChart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KAPieChart-Prefix.pch"; sourceTree = "<group>"; };
+		B98D31C81838ABA00016CBFB /* KAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAAppDelegate.h; sourceTree = "<group>"; };
+		B98D31C91838ABA00016CBFB /* KAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAAppDelegate.m; sourceTree = "<group>"; };
+		B98D31CC1838ABA00016CBFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B98D31CF1838ABA00016CBFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B98D31D11838ABA00016CBFB /* KAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAViewController.h; sourceTree = "<group>"; };
+		B98D31D21838ABA00016CBFB /* KAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAViewController.m; sourceTree = "<group>"; };
+		B98D31D41838ABA00016CBFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B98D31DA1838ABA00016CBFB /* KAPieChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAPieChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98D31DB1838ABA00016CBFB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B98D31E31838ABA00016CBFB /* KAPieChartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KAPieChartTests-Info.plist"; sourceTree = "<group>"; };
+		B98D31E51838ABA00016CBFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B98D31E71838ABA00016CBFB /* KAPieChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAPieChartTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B98D31B31838ABA00016CBFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98D31BC1838ABA00016CBFB /* CoreGraphics.framework in Frameworks */,
+				B98D31BE1838ABA00016CBFB /* UIKit.framework in Frameworks */,
+				B98D31BA1838ABA00016CBFB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D31D71838ABA00016CBFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98D31DC1838ABA00016CBFB /* XCTest.framework in Frameworks */,
+				B98D31DE1838ABA00016CBFB /* UIKit.framework in Frameworks */,
+				B98D31DD1838ABA00016CBFB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B98D31AD1838ABA00016CBFB = {
+			isa = PBXGroup;
+			children = (
+				B98D31BF1838ABA00016CBFB /* KAPieChart */,
+				B98D31E11838ABA00016CBFB /* KAPieChartTests */,
+				B98D31B81838ABA00016CBFB /* Frameworks */,
+				B98D31B71838ABA00016CBFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B98D31B71838ABA00016CBFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B98D31B61838ABA00016CBFB /* KAPieChart.app */,
+				B98D31DA1838ABA00016CBFB /* KAPieChartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B98D31B81838ABA00016CBFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B98D31B91838ABA00016CBFB /* Foundation.framework */,
+				B98D31BB1838ABA00016CBFB /* CoreGraphics.framework */,
+				B98D31BD1838ABA00016CBFB /* UIKit.framework */,
+				B98D31DB1838ABA00016CBFB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B98D31BF1838ABA00016CBFB /* KAPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				B98D31C81838ABA00016CBFB /* KAAppDelegate.h */,
+				B98D31C91838ABA00016CBFB /* KAAppDelegate.m */,
+				B98D31CB1838ABA00016CBFB /* Main_iPhone.storyboard */,
+				B98D31CE1838ABA00016CBFB /* Main_iPad.storyboard */,
+				B98D31D11838ABA00016CBFB /* KAViewController.h */,
+				B98D31D21838ABA00016CBFB /* KAViewController.m */,
+				B98D31D41838ABA00016CBFB /* Images.xcassets */,
+				B98D31C01838ABA00016CBFB /* Supporting Files */,
+			);
+			path = KAPieChart;
+			sourceTree = "<group>";
+		};
+		B98D31C01838ABA00016CBFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B98D31C11838ABA00016CBFB /* KAPieChart-Info.plist */,
+				B98D31C21838ABA00016CBFB /* InfoPlist.strings */,
+				B98D31C51838ABA00016CBFB /* main.m */,
+				B98D31C71838ABA00016CBFB /* KAPieChart-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B98D31E11838ABA00016CBFB /* KAPieChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				B98D31E71838ABA00016CBFB /* KAPieChartTests.m */,
+				B98D31E21838ABA00016CBFB /* Supporting Files */,
+			);
+			path = KAPieChartTests;
+			sourceTree = "<group>";
+		};
+		B98D31E21838ABA00016CBFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B98D31E31838ABA00016CBFB /* KAPieChartTests-Info.plist */,
+				B98D31E41838ABA00016CBFB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B98D31B51838ABA00016CBFB /* KAPieChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98D31EB1838ABA00016CBFB /* Build configuration list for PBXNativeTarget "KAPieChart" */;
+			buildPhases = (
+				B98D31B21838ABA00016CBFB /* Sources */,
+				B98D31B31838ABA00016CBFB /* Frameworks */,
+				B98D31B41838ABA00016CBFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KAPieChart;
+			productName = KAPieChart;
+			productReference = B98D31B61838ABA00016CBFB /* KAPieChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B98D31D91838ABA00016CBFB /* KAPieChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98D31EE1838ABA00016CBFB /* Build configuration list for PBXNativeTarget "KAPieChartTests" */;
+			buildPhases = (
+				B98D31D61838ABA00016CBFB /* Sources */,
+				B98D31D71838ABA00016CBFB /* Frameworks */,
+				B98D31D81838ABA00016CBFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98D31E01838ABA00016CBFB /* PBXTargetDependency */,
+			);
+			name = KAPieChartTests;
+			productName = KAPieChartTests;
+			productReference = B98D31DA1838ABA00016CBFB /* KAPieChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B98D31AE1838ABA00016CBFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KA;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Kenneth Parker Ackerson";
+				TargetAttributes = {
+					B98D31D91838ABA00016CBFB = {
+						TestTargetID = B98D31B51838ABA00016CBFB;
+					};
+				};
+			};
+			buildConfigurationList = B98D31B11838ABA00016CBFB /* Build configuration list for PBXProject "KAPieChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B98D31AD1838ABA00016CBFB;
+			productRefGroup = B98D31B71838ABA00016CBFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B98D31B51838ABA00016CBFB /* KAPieChart */,
+				B98D31D91838ABA00016CBFB /* KAPieChartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B98D31B41838ABA00016CBFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98D31D01838ABA00016CBFB /* Main_iPad.storyboard in Resources */,
+				B98D31D51838ABA00016CBFB /* Images.xcassets in Resources */,
+				B98D31CD1838ABA00016CBFB /* Main_iPhone.storyboard in Resources */,
+				B98D31C41838ABA00016CBFB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D31D81838ABA00016CBFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98D31E61838ABA00016CBFB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B98D31B21838ABA00016CBFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98D31D31838ABA00016CBFB /* KAViewController.m in Sources */,
+				B98D31CA1838ABA00016CBFB /* KAAppDelegate.m in Sources */,
+				B98D31C61838ABA00016CBFB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98D31D61838ABA00016CBFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98D31E81838ABA00016CBFB /* KAPieChartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B98D31E01838ABA00016CBFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98D31B51838ABA00016CBFB /* KAPieChart */;
+			targetProxy = B98D31DF1838ABA00016CBFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B98D31C21838ABA00016CBFB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B98D31C31838ABA00016CBFB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B98D31CB1838ABA00016CBFB /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B98D31CC1838ABA00016CBFB /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B98D31CE1838ABA00016CBFB /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B98D31CF1838ABA00016CBFB /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B98D31E41838ABA00016CBFB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B98D31E51838ABA00016CBFB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B98D31E91838ABA00016CBFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B98D31EA1838ABA00016CBFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B98D31EC1838ABA00016CBFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KAPieChart/KAPieChart-Prefix.pch";
+				INFOPLIST_FILE = "KAPieChart/KAPieChart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B98D31ED1838ABA00016CBFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KAPieChart/KAPieChart-Prefix.pch";
+				INFOPLIST_FILE = "KAPieChart/KAPieChart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B98D31EF1838ABA00016CBFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KAPieChart.app/KAPieChart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KAPieChart/KAPieChart-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KAPieChartTests/KAPieChartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B98D31F01838ABA00016CBFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KAPieChart.app/KAPieChart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KAPieChart/KAPieChart-Prefix.pch";
+				INFOPLIST_FILE = "KAPieChartTests/KAPieChartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B98D31B11838ABA00016CBFB /* Build configuration list for PBXProject "KAPieChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98D31E91838ABA00016CBFB /* Debug */,
+				B98D31EA1838ABA00016CBFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98D31EB1838ABA00016CBFB /* Build configuration list for PBXNativeTarget "KAPieChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98D31EC1838ABA00016CBFB /* Debug */,
+				B98D31ED1838ABA00016CBFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B98D31EE1838ABA00016CBFB /* Build configuration list for PBXNativeTarget "KAPieChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98D31EF1838ABA00016CBFB /* Debug */,
+				B98D31F01838ABA00016CBFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B98D31AE1838ABA00016CBFB /* Project object */;
+}
