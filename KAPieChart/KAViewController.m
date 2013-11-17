@@ -7,7 +7,7 @@
 //
 
 #import "KAViewController.h"
-
+#import "PieChart.h"
 @interface KAViewController ()
 
 @end
@@ -16,14 +16,23 @@
 
 - (void)viewDidLoad
 {
+    self.view.backgroundColor = [UIColor greenColor];
+    PieChart * pieChart = [[PieChart alloc] initWithFrame:CGRectMake(0, 0, 100, 100) andNumberOfSlices:10];
+    [self.view addSubview:pieChart];
+    
+    [pieChart addSubsection:0.1];
+    [pieChart addSubsection:0.1];
+    [pieChart addSubsection:0.1];
+    [pieChart addSubsection:0.1];
+    [pieChart addSubsection:0.1];
+    [pieChart addSubsection:0.1];
+    [pieChart addSubsection:0.1];
+    [pieChart addSubsection:0.1];
+    [pieChart addSubsection:0.1];
+    [pieChart addSubsection:0.1];
+
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
