@@ -9,10 +9,12 @@
 #import "KAPieChartSlice.h"
 
 @implementation KAPieChartSlice
-+(KAPieChartSlice *)sliceWithColor:(UIColor *)color andAmount:(float)size{
++(KAPieChartSlice *)sliceWithColor:(UIColor *)color andAmount:(float)size andDoesPopOut:(BOOL)doesPopOut amountToPopOut:(float)amount{
     KAPieChartSlice * p = [[KAPieChartSlice alloc] init];
     p.size = size;
     p.color = color;
+    p.doesPopOut = doesPopOut;
+    p.amountToPopOut = amount;
     return p;
 }
 

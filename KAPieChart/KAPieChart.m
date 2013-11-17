@@ -74,7 +74,7 @@
     const static float conversion = M_PI/180;
     const float x = self.bounds.size.width/2;
     const float y = self.bounds.size.height/2;
-    const float r = self.bounds.size.width/2;
+    const float r = self.bounds.size.width/2 - 5;
     float startDeg = -90;
     float endDeg = 0;
     
@@ -83,8 +83,16 @@
         KAPieChartSlice * currentSlice = self.slices[i];
         endDeg = startDeg + (currentSlice.size/sum) * 360;
         CGContextSetFillColorWithColor(ctx, currentSlice.color.CGColor);
-        CGContextMoveToPoint(ctx, x, y);
-        CGContextAddArc(ctx, x, y, r, startDeg*conversion, endDeg*conversion, 0);
+        float tempX = x;
+        float tempY = y;
+        if (currentSlice.doesPopOut){
+            CGPoint up = CGPointMake(cosf(conversion *((startDeg+endDeg)/2.f))*currentSlice.amountToPopOut, sinf(conversion *((startDeg+endDeg)/2.f))*currentSlice.amountToPopOut);
+            tempX += up.x;
+            tempY += up.y;
+        }
+        
+        CGContextMoveToPoint(ctx, tempX, tempY);
+        CGContextAddArc(ctx, tempX, tempY, r, startDeg*conversion, endDeg*conversion, 0);
         CGContextClosePath(ctx);
         CGContextFillPath(ctx);
         startDeg = endDeg;
