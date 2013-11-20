@@ -15,3 +15,7 @@ Features:
 - Fast.
 
 ![alt tag](http://thepearapps.com/pieChart@2x.png)
+
+What’s Next (in order of importance): 
+
+- Labels for slices
