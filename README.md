@@ -16,6 +16,7 @@ Features:
 - Fast.
 
 ![alt tag](http://thepearapps.com/pieChart@2x.png)
+
 ![alt tag](http://thepearapps.com/piechartpercent.png)
 
 What’s Next (in order of importance): 

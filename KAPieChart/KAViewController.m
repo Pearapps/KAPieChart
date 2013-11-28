@@ -23,7 +23,7 @@
 
     NSArray * slices = @[
                          // can also use KASliceMake() to create a slice
-                         [KAPieChartSlice sliceWithColor:[UIColor blueColor] andAmount:0.1 andDoesPopOut:NO amountToPopOut:0 withTitle:@"BLUE" andAttributes:attributes],
+                         [KAPieChartSlice sliceWithColor:[UIColor blueColor] andAmount:0.1 andDoesPopOut:NO amountToPopOut:0 withTitle:nil andAttributes:nil], // ***pass nil for NO title
                          [KAPieChartSlice sliceWithColor:[UIColor greenColor] andAmount:0.1 andDoesPopOut:NO amountToPopOut:0 withTitle:@"Hello\nWorld!" andAttributes:attributes],
                          [KAPieChartSlice sliceWithColor:[UIColor cyanColor] andAmount:0.1 andDoesPopOut:NO amountToPopOut:0 withTitle:@"Bye!" andAttributes:attributes],
                          [KAPieChartSlice sliceWithColor:[UIColor yellowColor] andAmount:0.1 andDoesPopOut:NO amountToPopOut:0 withTitle:@"Yellow?" andAttributes:attributes],
