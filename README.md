@@ -15,7 +15,7 @@ Features:
 - Any slice can be ‘popped out’ to create separation from chart.
 - Fast.
 
-![alt tag](http://thepearapps.com/pieChart@2x.png)
+![alt tag](http://thepearapps.com/pieChart.png)
 
 ![alt tag](http://thepearapps.com/piechartpercent.png)
 
