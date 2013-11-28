@@ -95,10 +95,30 @@
         CGContextAddArc(ctx, tempX, tempY, r, startDeg*conversion, endDeg*conversion, 0);
         CGContextClosePath(ctx);
         CGContextFillPath(ctx);
+        
+        CGContextSaveGState(ctx);
+        if ((currentSlice.title && currentSlice.textAttributes) || (currentSlice.textAttributes && self.ignoresAllTitleLabelsAndDisplayPercentages)){
+            if (self.ignoresAllTitleLabelsAndDisplayPercentages){
+                currentSlice.title = [NSString stringWithFormat:@"%.2f%%", 100*(currentSlice.size/sum)];
+            }
+            if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+                CGSize size = [currentSlice.title sizeWithAttributes:currentSlice.textAttributes];
+                [currentSlice.title drawAtPoint:CGPointMake(tempX + r*0.7*cosf(conversion *((startDeg+endDeg)/2.f)) - size.width/2, tempY + r*0.7 * sinf(conversion *((startDeg+endDeg)/2.f)) - size.height/2) withAttributes:currentSlice.textAttributes];
+            }else{
+                UIFont * font = currentSlice.textAttributes[NSFontAttributeName];
+                [currentSlice.textAttributes[NSForegroundColorAttributeName] setFill];
+                CGSize size = [currentSlice.title sizeWithFont:font];
+                [currentSlice.title drawAtPoint:CGPointMake(tempX + r*0.7*cosf(conversion *((startDeg+endDeg)/2.f)) - size.width/2, tempY + r*0.7 * sinf(conversion *((startDeg+endDeg)/2.f)) - size.height/2) withFont:font];
+            }
+        }
+        CGContextRestoreGState(ctx);
+        
         startDeg = endDeg;
     }
 }
-
+//NSMutableParagraphStyle *textStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
+//        textStyle.lineBreakMode = NSLineBreakByWordWrapping;
+//        textStyle.alignment = NSTextAlignmentCenter;
 - (void)dealloc{
     _slices = nil;
 }

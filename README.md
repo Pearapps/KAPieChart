@@ -18,4 +18,4 @@ Features:
 
 What’s Next (in order of importance): 
 
-- Labels for slices
+- Touch detection on each slice (possibly allowing manipulation of some sort linearly)

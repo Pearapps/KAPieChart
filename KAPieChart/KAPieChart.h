@@ -12,6 +12,9 @@
     float sum; // sum of all slices size's. This makes it so the sizes are all relative and not based on a certain scale
 }
 @property (readonly, strong) NSMutableArray * slices; // slices array - readonly
+
+@property (nonatomic, assign) BOOL ignoresAllTitleLabelsAndDisplayPercentages; //Will need to have text attributes set but will display percentages instead of any titles that may have been set or not set
+
 + (NSArray *)defaultColors; // old method; just an array of colors
 - (id)initWithSize:(float)size withSlices:(NSArray *)slices; // REQUIRED initializer
 - (void)addSlice:(KAPieChartSlice *)slice; // add a slice to chart
