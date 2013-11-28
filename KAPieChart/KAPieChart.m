@@ -116,9 +116,6 @@
         startDeg = endDeg;
     }
 }
-//NSMutableParagraphStyle *textStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
-//        textStyle.lineBreakMode = NSLineBreakByWordWrapping;
-//        textStyle.alignment = NSTextAlignmentCenter;
 - (void)dealloc{
     _slices = nil;
 }
