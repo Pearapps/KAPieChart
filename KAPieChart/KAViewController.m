@@ -21,12 +21,14 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:11], NSForegroundColorAttributeName: [UIColor blackColor]};
 
-    NSArray * slices = @[KASliceMake([UIColor blueColor], 0.1, NO , 0, nil, attributes), // KASliceMake is a macro to create slices that takes less space then the default way
-                         KASliceMake([UIColor greenColor], 0.1, NO, 0, nil, attributes),
-                         KASliceMake([UIColor cyanColor], 0.1, NO, 0, nil,attributes),
-                         KASliceMake([UIColor yellowColor], 0.1,NO, 0, nil, attributes),
-                         KASliceMake([UIColor orangeColor], 0.1, NO, 0, nil, attributes),
-                         [KAPieChartSlice sliceWithColor:[UIColor redColor] andAmount:0.2 andDoesPopOut:YES amountToPopOut:5 withTitle:nil andAttributes:attributes], // *** another way to create a slice
+    NSArray * slices = @[
+                         // can also use KASliceMake() to create a slice
+                         [KAPieChartSlice sliceWithColor:[UIColor blueColor] andAmount:0.1 andDoesPopOut:NO amountToPopOut:0 withTitle:@"BLUE" andAttributes:attributes],
+                         [KAPieChartSlice sliceWithColor:[UIColor greenColor] andAmount:0.1 andDoesPopOut:NO amountToPopOut:0 withTitle:@"Hello\nWorld!" andAttributes:attributes],
+                         [KAPieChartSlice sliceWithColor:[UIColor cyanColor] andAmount:0.1 andDoesPopOut:NO amountToPopOut:0 withTitle:@"Bye!" andAttributes:attributes],
+                         [KAPieChartSlice sliceWithColor:[UIColor yellowColor] andAmount:0.1 andDoesPopOut:NO amountToPopOut:0 withTitle:@"Yellow?" andAttributes:attributes],
+                         [KAPieChartSlice sliceWithColor:[UIColor orangeColor] andAmount:0.1 andDoesPopOut:NO amountToPopOut:0 withTitle:@"Mercury" andAttributes:attributes],
+                         [KAPieChartSlice sliceWithColor:[UIColor redColor] andAmount:0.2 andDoesPopOut:YES amountToPopOut:5 withTitle:@"Big slice!" andAttributes:attributes],
                          ];
     
     pieChart = [[KAPieChart alloc] initWithSize:250 withSlices:slices];

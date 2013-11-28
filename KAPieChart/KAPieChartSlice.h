@@ -11,7 +11,7 @@
 #define KASliceMake(color, size, doesPopOut, amountOfPoppingOut, title, attributes) [KAPieChartSlice sliceWithColor:color andAmount:size andDoesPopOut:doesPopOut amountToPopOut:amountOfPoppingOut withTitle:title andAttributes:attributes]
 
 @interface KAPieChartSlice : NSObject
-+(KAPieChartSlice *)sliceWithColor:(UIColor *)color andAmount:(float)size andDoesPopOut:(BOOL)doesPopOut amountToPopOut:(float)amount withTitle:(NSString *)title andAttributes:(NSDictionary *)attributes; // create a slice.
++(KAPieChartSlice *)sliceWithColor:(UIColor *)color andAmount:(float)size andDoesPopOut:(BOOL)doesPopOut amountToPopOut:(float)amount withTitle:(NSString *)title andAttributes:(NSDictionary *)attributes; // create a slice. ***Pass nil for title and attributes if you dont want them***
 
 - (void)setTitle:(NSString *)title andAttributes:(NSDictionary *)attributes;
 
