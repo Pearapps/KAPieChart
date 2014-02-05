@@ -37,13 +37,11 @@
         NSLog(@"%@", slice);
     }];
     
-    [pieChart setIgnoresAllTitleLabelsAndDisplayPercentages:YES]; // shows percentages instead of title labels ***NEEDS textAttributes set on every slice that wants to display percentage***
+    //[pieChart setIgnoresAllTitleLabelsAndDisplayPercentages:YES]; // shows percentages instead of title labels ***NEEDS textAttributes set on every slice that wants to display percentage***
     
     [self.view addSubview:pieChart];
     [pieChart setCenter:CGPointMake([[UIScreen mainScreen] bounds].size.width/2, [[UIScreen mainScreen] bounds].size.height/2)];
-    
-    
-    
+        
     
     [super viewDidLoad];
 }
